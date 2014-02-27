@@ -10,8 +10,11 @@ In *~/.gitconfig*, set your template dir:
     templatedir = ~/.git_template
 ```
 
-Then copy the script *pre-commit* to *~/.git_template/hooks/*. This will assure that new repos created with either `clone` or `init` will have the hook. If you want it for an existing repo, then copy the script manually to *~/.git/hooks/*.
+Then copy the script *pre-commit* to *~/.git_template/hooks/*. This will assure that new repos created with either `clone` or `init` will have the hook. If you want it for an existing repo, you can reinitialize it with:
 
+```bash
+$ git init
+```
 
 ## Configuration
 
